@@ -38,7 +38,7 @@ Observação: Você pode deve passar uma lista de IPs em arquivo de texto como a
 
 ### Argumentos do Script
 
-O script scan.py suporta os seguintes argumentos obrigatório:
+O script scan.py suporta os seguintes argumentos obrigatórios:
 
     -f: Especifica o arquivo de texto com a lista de IPs.
 
