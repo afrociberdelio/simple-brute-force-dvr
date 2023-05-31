@@ -41,6 +41,7 @@ def attack(ip,user):
     return
 
 ips = open(options.file_list_ip,'r')
+ips = ips.readlines()
 
 for ip in ips:
     ip = ip.split("\n")[0]
