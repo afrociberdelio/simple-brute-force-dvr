@@ -19,7 +19,7 @@ def attack(ip,user):
         encrypted=encrypt(bytes(user, encoding="utf-8")).decode("utf-8")
         instance = vlc.Instance("--vout=dummy --network-caching=200 --sout-mux-caching=<>")
         player = instance.media_player_new()
-        player.set_mrl("rtsp://"+ip+":554/cam/realmonitor?channel=1&subtype=0&authbasic="+encrypted)
+        player.set_mrl(f"rtsp://{ip}:554/cam/realmonitor?channel=1&subtype=0&authbasic={encrypted}")
         player.play()
 
         time = tmp() + 3
