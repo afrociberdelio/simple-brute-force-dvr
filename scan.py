@@ -11,7 +11,7 @@ parser.add_option("-f", "--file", dest="file_list_ip", help="Specify filename wi
 
 (options, args) = parser.parse_args()
 
-if (options.input_list_ip == None):
+if (options.file_list_ip == None):
     parser.error("-f IP list file is required")
 
 def attack(ip,user):
